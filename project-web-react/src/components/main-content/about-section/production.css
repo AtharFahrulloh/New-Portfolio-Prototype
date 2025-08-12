@@ -20,7 +20,7 @@
     animation-iteration-count: infinite;
 }
 
-.production-content h1, .production-content img {
+.production-content img {
     animation-name: cogwheelMotion;
     animation-duration: 4s;
     animation-timing-function: linear;
