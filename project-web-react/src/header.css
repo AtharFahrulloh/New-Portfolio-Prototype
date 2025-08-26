@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 2px 15px 5px rgb(27, 135, 177);
+    min-height: 75px;
+    animation-name: lightHeader;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes lightHeader {
+    0% {
+        box-shadow: 0 2px 15px 5px rgb(27, 135, 177);
+    }
+    50% {
+        box-shadow: 0 2px 5px 2px rgb(27, 135, 177);
+    }
+    100% {
+        box-shadow: 0 2px 15px 5px rgb(27, 135, 177);
+    }
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list-item a {
+    color: rgb(27, 135, 177);
+    padding: 10px 15px;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-list-item a:hover {
+    color: rgb(137, 225, 254);
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+

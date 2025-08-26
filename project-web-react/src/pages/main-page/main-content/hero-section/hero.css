@@ -1,0 +1,98 @@
+.hero-section {
+    padding: 3rem 5%;
+    padding-top: 75px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: var(--space-sm) 0;
+}
+
+.highlight {
+    color: rgb(27, 135, 177);
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+}
+
+.highlight:hover {
+    color: rgb(97, 209, 247);
+}
+
+.hero-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--scnd-text);
+}
+
+.hero-description p {
+    font-size: 1.1rem;
+    color: var(--scnd-text);
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    max-height: 500px;
+    object-fit: cover;
+    animation-name: imageMotion;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imageMotion {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: translateY(-7px);
+}

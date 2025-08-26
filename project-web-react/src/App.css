@@ -1,5 +1,10 @@
-#root {
-  max-width: 1280px;
+body, html {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
 }

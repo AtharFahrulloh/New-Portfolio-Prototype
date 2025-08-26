@@ -1,15 +1,17 @@
-import Header from './components/header/Header.jsx'
-import Footer from './components/footer/footer.jsx'
-import Hero from './components/main-content/hero-section/Hero.jsx'
-import Production from './components/main-content/about-section/production.jsx'
+import { Routes, Route } from 'react-router-dom'
+import Header from './Header.jsx'
+import Combine from './combine.jsx'
+import FanPage from './pages/fan-page/fan-page.jsx'
+import './App.css'
 
-function App() {
+const App = () => {
     return (
         <>
             <Header />
-            <Hero />
-            <Production />
-            <Footer />
+            <Routes>
+                <Route path='/' element={<Combine />} />
+                <Route path="/fanpage" element={<FanPage />} />
+            </Routes>
         </>
     )
 }

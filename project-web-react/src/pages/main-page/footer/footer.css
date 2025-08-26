@@ -1,0 +1,48 @@
+.footer-section {
+    background-color: rgb(42, 42, 42);
+    min-height: 45vh;
+    margin-top: 4rem;
+    padding: 2rem 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 7px;
+}
+
+.social-links a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: translateY(-7px);
+}
+
+.navbar {
+    position: relative;
+    justify-content: center;
+}
+
+.nav-list {
+    display: block;
+}
